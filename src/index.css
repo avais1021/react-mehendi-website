@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel=Tangerine:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.common_h1{
+  font-family: 'Tangerine', cursive;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+/* //Navbar css ------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar_menu ul {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+  list-style: none;
+  font-weight: 600;
+}
+.navbar_menu ul li{
+  position: relative;
+}
+.navbar_menu ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1.5px;
+  width: 0;
+  transition: 1s linear;
+  background: black;
+}
+.navbar_menu ul li:hover::after {
+  content: "";
+  width: 100%;
+}
+
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.navbar_logo h2 {
+  font-size: 38px;
+  font-family: initial;
+  font-family: 'Dancing Script', cursive !important;
+  color: #7f4f09;
+  text-shadow: 3px 3px 3px #00000070;
+}
+
+.navbar_logo img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Banner -------------- */
+.banner{
+  background: url('./images/mehndi_banner.webp') no-repeat center center/cover;
+  width: 100%;
+  height: 500px;
+  background-size: 100% 100%;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 430px;
+  width: 100%;
+  height: 500px;
+}
+.banner h1{
+  font-family: 'Tangerine', cursive;
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+.banner h2{
+  font-family: 'Cinzel';
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* About us ------------------------------------- */
+.aboutUs{
+  width: 100%;
+  min-height: 500px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.aboutUs::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  background: url('./images/about-us-banner.webp') no-repeat center center/cover;
+  opacity: 0.6;
+  background-size: 100% 100%;
+}
+.aboutUs_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 770px;
+  width: 100%;
+  min-height: 500px;
+}
+.aboutUs_text p{
+  font-family: 'Cinzel';
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: #0009;
+  background: #fff9;
+  border-radius: 10px;
+}
+.aboutUs_img{
+  position: absolute;
+  top: 50%;
+  right: 175px;
+  transform: translate(0,-50%);
+  z-index: -1;
+  max-width: 415px;
+  width: 100%;
+  height: 400px;
+}
+.aboutUs_img img{
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+/* why us section ----------------------  */
+.whyUs_cards__wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.whyUs .card{
+  max-width: 300px;
+  width: 100%;
+  min-height: 322px;
+  padding: 20px;
+  border: 2px solid rgb(193, 132, 144);
+  border-radius: 50px 0px;
+  border-right: transparent;
+  border-left: transparent;
+  position: relative;
+}
+.whyUs .card::after{
+  content: '';
+  position: absolute;
+  width: 165px;
+  height: 85px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50% , 0);
+  background: url(/static/media/whyUs-card-bg1.2f1f02c8.jpg)no-repeat center center/cover;
+  background-size: 100% 100%;
+
+}
+.whyUs .card h2{
+  font-family: 'Tangerine', cursive;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+.whyUs .card p{  
+  font-family: 'Cinzel';
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+  color: #0009;
+}
+
+@media screen and (max-width : 1135.9px) {
+  .aboutUs_img img{
+    opacity: 0.4;
+  }
+}
+
+@media screen and (max-width : 768.9px) {
+  /* navbar ---------- */
+  .navbar_menu ul {
+    font-size: 12px;
+  }
+  /* Banner ----  */
+  .banner{
+    height: 380px !important;
+    background-size: 180% 100%;
+    background-position-x: -232px;
+  }
+  .heading {
+    height: 120px;
+  }
+  .banner h1{
+    font-size: 39px;
+    margin-bottom: 5px;
+  }
+  .banner h2{
+    font-size: 25px;
+  }
+
+  /* about us ------------------- */
+  .aboutUs_img{
+    right: unset;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+  }
+  /* why Us ------------ */
+  .whyUs h1{
+    text-align: center;
+  }
+
+}

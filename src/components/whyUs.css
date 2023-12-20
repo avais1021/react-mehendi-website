@@ -1,0 +1,19 @@
+.whyUs .container {
+    padding: 0 30px;
+}  
+.whyUs .card {
+    margin: 0 auto;
+    display: block !important;
+}
+.slick-prev, .slick-next {
+    background: rgb(193, 132, 144) !important;
+}
+.slick-prev::before, .slick-next::before {
+    line-height: 1.2 !important;
+}
+.slick-prev {
+  left: -24px !important;
+}
+.slick-next {
+    right: -24px !important;
+  }
