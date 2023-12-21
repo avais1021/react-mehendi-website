@@ -1,10 +1,9 @@
 import React from 'react'
+import VideosAll from './components/VideosAll'
 
 const VideoPage = () => {
   return (
-    <div>
-      <h1>Video page</h1>
-    </div>
+    <VideosAll />
   )
 }
 

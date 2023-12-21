@@ -26,7 +26,8 @@ body {
 .common_h1{
   font-family: 'Tangerine', cursive;
   font-size: 55px;
-  margin-bottom: 30px;
+  margin: 35px 0;
+  text-align: center;
 }
 
 /* //Navbar css ------------------------- */
@@ -48,6 +49,10 @@ body {
 }
 .navbar_menu ul li{
   position: relative;
+}
+.navbar_menu ul a{
+  text-decoration: none;
+  color: black;
 }
 .navbar_menu ul li::after {
   content: "";
@@ -165,10 +170,16 @@ body {
 }
 
 /* why us section ----------------------  */
-.whyUs_cards__wrapper{
+/* .whyUs_cards__wrapper{
   display: flex;
   justify-content: space-around;
   align-items: center;
+} */
+.whyUs{
+  padding-bottom: 25px;
+}
+.whyUs h1{
+  text-align: center;
 }
 .whyUs .card{
   max-width: 300px;
@@ -209,6 +220,54 @@ body {
   color: #0009;
 }
 
+/* Gallery -------------------------------------------------  */
+.galllery_pics{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* display: none; */
+}
+.galllery_pics img{
+  max-width: 414px;
+  width: 100%;
+  height: 225px;
+  border-radius: 15px;
+}
+.galllery button{
+  font-size: 18px;
+  padding: 5px 20px;
+  border: none;
+  background: rgb(193, 132, 144);
+  color: white;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 3px 3px #412c2c inset;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+}
+.galllery a{
+  text-decoration: none;
+}
+/* videos section css ------------ */
+.videocss{
+  max-width: 400px;
+  width: 100%;
+  height: 225px;
+  border-radius: 15px;
+}
+.videoBtn{
+margin-bottom: 25px !important;
+}
+
+@media screen and (max-width : 1321.9px) {
+  .galllery_pics{
+    justify-content: center;
+  }
+}
 @media screen and (max-width : 1135.9px) {
   .aboutUs_img img{
     opacity: 0.4;
@@ -245,8 +304,6 @@ body {
     display: none;
   }
   /* why Us ------------ */
-  .whyUs h1{
-    text-align: center;
-  }
+
 
 }

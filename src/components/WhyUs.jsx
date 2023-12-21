@@ -38,7 +38,7 @@ const WhyUs = () => {
       };
 
     return (
-        <div className='whyUs'>
+        <section className='whyUs'>
             <div className="container">
                 <h1 className='common_h1'>Why Us</h1>
                 {/* <div className="whyUs_cards__wrapper"> */}
@@ -64,7 +64,7 @@ const WhyUs = () => {
                     </Slider>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

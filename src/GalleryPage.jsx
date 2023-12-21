@@ -1,10 +1,9 @@
 import React from 'react'
+import GalleryAll from './components/GalleryAll'
 
 const GalleryPage = () => {
   return (
-    <div>
-      <h1>GalleryPage</h1>
-    </div>
+   <GalleryAll />
   )
 }
 
