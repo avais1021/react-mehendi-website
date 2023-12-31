@@ -15,6 +15,9 @@ const WhatsAppButton = () => {
         <button onClick={handleClick}>
             <img src="whatsapp-logo-1.png" alt="whatsApp-icon" />
         </button>
+        <button>
+        <a href="tel:8104080331"><img src="call-icon2.jpg" alt="call-icon" /></a>
+        </button>
     </div>
   )
 }
