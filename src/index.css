@@ -263,6 +263,24 @@ body {
 margin-bottom: 25px !important;
 }
 
+/* whatsApp-icon  */
+.whatsApp{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+}
+.whatsApp button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+}
+.whatsApp img{
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
+}
+
 @media screen and (max-width : 1321.9px) {
   .galllery_pics{
     justify-content: center;
