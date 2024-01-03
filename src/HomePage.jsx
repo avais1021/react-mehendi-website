@@ -6,6 +6,7 @@ import WhyUs from './components/WhyUs'
 import Gallery from './components/Gallery'
 import Videos from './components/Videos'
 import WhatsAppButton from './components/WhatsAppButton'
+import Footer from './components/Footer'
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
             <WhyUs />
             <Gallery />
             <Videos />
+            <Footer />
             <WhatsAppButton />
         </>
     )

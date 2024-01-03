@@ -288,6 +288,14 @@ margin-bottom: 25px !important;
   height: 100%;
   border-radius: 7px;
 }
+/* Footer css------------------  */
+.footer{
+  background: rgb(193, 132, 144);
+  text-align: center;
+  padding: 4px 0;
+  color: white;
+  font-weight: bold;
+}
 
 @media screen and (max-width : 1321.9px) {
   .galllery_pics{
